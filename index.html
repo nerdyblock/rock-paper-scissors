@@ -5,30 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script> 
+    <script src="script.js" defer></script> 
     <title>rock paper scissors</title>
 </head>
 <body>
     <header>
         <h1>Rock Paper and Scissor</h1>
     </header>
-    <div class="container">
-        <div class="choice" id="rock">
-            <span>
-                <h2>Rock</h2>
-            </span>
+    <main>
+        <div class="container">
+            <div class="choice choice-transform" id="rock">
+                <span>
+                    <h2>Rock</h2>
+                </span>
+            </div>
+            <div class="choice choice-transform" id="paper">
+                <span>
+                    <h2>Paper</h2>
+                </span>
+            </div>
+            
+            <div class="choice choice-transform" id="scissor">
+                <span>
+                    <h2>Scissor</h2>
+                </span>
+            </div>
         </div>
-        <div class="choice" id="paper">
-            <span>
-                <h2>Paper</h2>
-            </span>
+        <div class="result">
+            <div class="score-container">
+                <div>
+                    <h3>Your Score:<span id="player-score"> 0</span></h3>
+                </div>
+                <div>
+                    <h3>Computer's Score:<span id="computer-score"> 0</span></h3>
+                </div>
+            </div>
+            <h3>Let's Play!!</h3>
+            <h4 id="final-result-text"></h4>
+            <button class="play-again">
+                Play Again
+            </button>
         </div>
-        
-        <div class="choice" id="scissor">
-            <span>
-                <h2>Scissor</h2>
-            </span>
-        </div>
-    </div>
+    </main>
+    
 </body>
 </html>
