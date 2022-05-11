@@ -1,3 +1,14 @@
+body {
+    background-color: #CAD5E2;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
     text-align: center;
 }
@@ -16,11 +27,47 @@ h1 {
     width: 100px;
 }
 
-.choice:hover {
+.choice-transform:hover {
     transform: scale(1.1);
     border-color:rgb(214, 116, 91);
 }
 
 h2 {
     text-align: center;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    margin-top: 80px;
+}
+
+.result>h3 {
+    text-align: center;
+}
+
+.play-again {
+    display: none;
+    background-color: #CAD5E2;
+    text-align: center;
+    border: 3px white solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 300px;
+}
+
+.play-again:hover {
+    transform: scale(1.1);
+    border-color:rgb(221, 38, 47);
+    background-color: blueviolet;
+    color: white;
 }
