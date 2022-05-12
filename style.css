@@ -1,5 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+html {
+    /* make text unselectable on different browsers */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
-    background-color: #CAD5E2;
+    background-color: #f353be;
+    margin: 0px;
+    font-family: 'Macondo',sans-serif;
+    background-image: url('https://wallpapercave.com/dwp1x/wp7534053.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 1920px 1220px; 
+}
+
+header {
+    padding: 8px 0px;
+    margin-bottom: 20px;
 }
 
 main {
@@ -11,6 +34,8 @@ main {
 
 h1 {
     text-align: center;
+    font-size: 34px;
+    font-weight: bold;
 }
 
 .container {
@@ -29,11 +54,14 @@ h1 {
 
 .choice-transform:hover {
     transform: scale(1.1);
-    border-color:rgb(214, 116, 91);
+    /* border-color:rgb(214, 116, 91); */
+    border-color:#df0b40;
+    color: #862c9c;
 }
 
 h2 {
     text-align: center;
+    font-size: 24px;
 }
 
 .result {
@@ -46,28 +74,37 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 4em;
-    margin-top: 80px;
+    margin-top: 40px;
+}
+
+.score-container h3 {
+    font-size: 28px;
+    font-weight: 800;
+    max-width: 250px;
 }
 
 .result>h3 {
     text-align: center;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .play-again {
     display: none;
-    background-color: #CAD5E2;
+    background-color: transparent;
     text-align: center;
-    border: 3px white solid;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+    font-family: inherit;
+    font-size: 20px;
     font-weight: 600;
     max-width: 300px;
+    border: 3px #0A38FC solid;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
 .play-again:hover {
     transform: scale(1.1);
-    border-color:rgb(221, 38, 47);
-    background-color: blueviolet;
-    color: white;
+    border-color:#991839;
+    background-color: rgb(226, 125, 230);
+    color: #0A38FC;
 }
